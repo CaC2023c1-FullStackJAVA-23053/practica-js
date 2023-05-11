@@ -9,8 +9,9 @@
 </head>
 <body>
     <h1 id="elTitulo">Probando cosas en el DOM</h1>
-    <h2>Document Object Model</h2>
+    <h2 id="elSubtitulo">Document Object Model</h2>
     <hr>
+
     <form action="" id="elForm">
 		<label for="fname">Nombre:</label> <br>
 		<input type="text" id="fname" name="fname">
@@ -19,14 +20,18 @@
 		<input type="text" id="lname" name="lname">
 		<br>
 		<label for="mensaje">Tu mensaje:</label> <br>		
-		<textarea id="mensaje" name="message" rows="5" cols="30">Un mensaje de prueba...</textarea>
+		<textarea id="mensaje" name="message" rows="5" cols="30" readonly>Un mensaje de prueba...</textarea>
+		<span id="avisoCantCaracteres"></span>
 		<br>
 		<input type="submit">
 		<input type="reset">
 	</form>
 
+	<div class="caja" id="caja"></div>
     <div id="resultado"></div>
 
-    <script src="js/20-prueba-dom.js"></script>
+	<button id="botonCambiarColor">Cambiar color</button>
+
+    <script src="js/21-intro-eventos.js"></script>
 </body>
 </html>
